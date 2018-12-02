@@ -1,0 +1,13 @@
+!-------------------------------------------------------------------------------
+! Файл конфігурації для xmodmap (тестовий)
+! Використання: xmodmap capslock.test
+! ----- >8 -----
+! Capslock працюватиме як ISO_Level3_Shift (третій рівень, зазвичай правий Alt),
+! а з Shift — як звичайний Capslock.
+! ----- >8 -----
+! tivasyk <tivasyk@gmail.com> (2018)
+!-------------------------------------------------------------------------------
+clear lock
+clear mod5
+add mod5 = Caps_Lock ISO_Level3_Shift
+keycode 66 = ISO_Level3_Shift Caps_Lock
